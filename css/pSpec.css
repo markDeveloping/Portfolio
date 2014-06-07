@@ -1,0 +1,50 @@
+/*Page specific css*/
+
+body {
+	margin: 0;
+}
+
+/*intro text*/
+#introText {
+	width: 57%;
+	padding-right: 20px;
+	float:left;
+}
+
+/*current project*/
+#curProj {
+	float:left;
+	width: 43%;
+}
+
+.curProj {
+	float:left;
+	width: 100%;
+	margin-top:20px;
+	border:1px solid #aeaeae;
+	padding-top: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+
+/*My Skills*/
+#skills {
+	clear: both;
+	width: 100%;
+}
+
+/*Biography*/
+#bio {
+	clear: both;
+	width: 100%;
+}
+
+.threeCol {
+	font-size: 19px;
+       -moz-column-count: 3;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 3;
+       -webkit-column-gap: 20px;
+}
