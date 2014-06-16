@@ -13,7 +13,7 @@ body {
 
 /*current project*/
 #curProj {
-	float:left;
+	float:right;
 	width: 43%;
 }
 
@@ -31,8 +31,47 @@ body {
 
 /*My Skills*/
 #skills {
-	clear: both;
-	width: 100%;
+	float:left;
+	width: 57%;
+	margin-top: 35px;
+}
+
+.html5 {
+	list-style-type: none;
+	position: absolute;
+	left:475px;
+	top:390px;
+}
+
+.css3 {
+	list-style-type: none;
+	position: absolute;
+	left:285px;
+	top:390px;
+	color: #ffffff;
+}
+
+.javascript {
+	list-style-type: none;
+	position: absolute;
+	left:366px;
+	top:675px;
+}
+
+.sql {
+	list-style-type: none;
+	position: absolute;
+	left:120px;
+}
+
+.php {
+	list-style-type: none;
+	position: absolute;
+	left:120px;
+}
+
+canvas {
+	margin-left: 60px;
 }
 
 /*Biography*/
