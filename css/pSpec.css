@@ -31,43 +31,8 @@ body {
 
 /*My Skills*/
 #skills {
-	float:left;
-	width: 57%;
-	margin-top: 35px;
-}
-
-.html5 {
-	list-style-type: none;
-	position: absolute;
-	left:475px;
-	top:390px;
-}
-
-.css3 {
-	list-style-type: none;
-	position: absolute;
-	left:285px;
-	top:390px;
-	color: #ffffff;
-}
-
-.javascript {
-	list-style-type: none;
-	position: absolute;
-	left:366px;
-	top:675px;
-}
-
-.sql {
-	list-style-type: none;
-	position: absolute;
-	left:120px;
-}
-
-.php {
-	list-style-type: none;
-	position: absolute;
-	left:120px;
+	clear: both;
+	width: 100%;
 }
 
 canvas {

@@ -4,12 +4,6 @@ p, a, li {
 	font-size: 22px;
 }
 
-h2 span {
-	margin-top: -75px;        /* Size of fixed header */
- 	padding-bottom: 75px; 
-  	display: block; 
-}
-
 h1{
 font-size: 36px;
 color: #1BBC9B;

@@ -1,0 +1,707 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+<!--Title for browser tab-->
+<title>Service Standards Compliance</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--Below meta tags used for SEO-->
+<meta name="description" content="Civil Service Resourcing - Compliance with the Government Digital by Default Service Standards">
+<meta name="keywords" content="GDS, Digital by Default, Service Standards">
+<meta name="author" content="CS Resourcing">
+
+
+<!--documents CSS-->
+<style>
+
+/*Browser Compatibility Style*/
+
+*, *:after, *:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/*defaul style for document*/
+
+body {
+font-family:Arial, Helvetica, sans-serif;
+background-color:#ffffff;
+margin:0;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h2 {
+_font-size:23px;
+*font-size:23px;
+_padding-right:19px;
+*padding-right:19px;
+}
+
+p {
+font-size:17px;
+}
+
+#header {
+width:100%;
+padding-top:5px;
+padding-bottom:5px;
+border-bottom:0px solid #b2b2b2;
+}
+
+#logo {
+width:950px;
+margin-left:auto;
+margin-right:auto;
+padding-top:13px;
+padding-bottom:10px;
+}
+
+#wrapper {
+Width:950px;
+border-top:5px solid #000000;
+margin-left:auto;
+margin-right:auto;
+}
+
+/*Quick Reference for printed doc*/
+#QR {
+display:none;
+float:right;
+}
+
+#main {
+width:740px;
+_width:688px;
+*width:688px;
+float:left;
+margin-top:15px;
+margin-bottom:20px;
+_padding-top:15px;
+*padding-top:15px;
+*padding-bottom:10px;
+_padding-bottom:10px;
+padding-right:15px;	
+}
+
+#intro {
+border-top:1px solid #000000;
+border-bottom:1px solid #000000;
+}
+
+#Visible_hidden {
+display:none;
+}
+
+.IntroHead {
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+a#min {
+color:#005ea5;
+}
+
+/*description box*/
+#description {
+background-color:#2b8cc4;
+color:#ffffff;
+padding:10px 10px;
+margin-top:9px;
+}
+
+#description-text {
+font-size:23px;
+margin-bottom:5px;
+}
+
+a.descript {
+color:#ffffff;
+}
+
+a.descript:hover {
+color:#E3E3E3;
+}
+
+#descriptLeft {
+width:15%;
+float:left;
+padding-top:12px;
+}
+
+#descriptRight {
+width:85%;
+float:right;
+*padding-top:24px;
+}
+
+#no {
+font-weight:bold;
+font-size:75px;
+float:right;
+padding-right:18px;
+margin:0;
+}
+
+#guidance {
+float:right;
+width:85%;
+margin-bottom:18px;
+}
+
+#guidance a{
+width:180px;
+display:block;
+color:#ffffff;
+padding-bottom:5px;
+}
+
+#guidance a:hover {
+color:#dcdcdc;
+}
+
+/*Navigation section and buttons*/
+.selCritHead {
+*margin-left:13px;
+_margin-left:13px;
+}
+
+#nav {
+Width:190px;
+float:left;
+margin-top:25px;
+text-align:center;
+padding-bottom:10px;
+margin-left:8px;
+}
+
+.button_link {
+float:left;
+font-size:20px;
+font-weight:bold;
+margin-bottom:1px;
+background: #f4f4f4;
+width:94px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border: #b2b2b2 1px solid;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+padding:4px 0;
+*padding:0;
+margin-right:1px;
+-webkit-transition-duration: 0.2s;
+-moz-transition-duration: 0.2s;
+transition-duration: 0.2s;
+}
+
+.button_link:hover, .button-link:focus {
+border: solid 1px #2b8cc4;
+text-decoration: none;
+}
+
+h1 {
+font-size:40px;
+}
+
+.subhead {
+color:#4D4D4D;
+font-size:22px;
+}
+
+/*Footer*/
+#footer {
+width:100%;
+border-top:1px solid #5B5B5B;
+background-color:#E3E3E3;
+clear:both;
+_margin-top:20px;
+*margin-top:20px;
+margin-bottom:0px;
+}
+
+#foot_wrap {
+width:950px;
+margin-left:auto;
+margin-right:auto;
+padding:40px 0;
+margin-bottom:0px;
+padding-bottom:3px;
+}
+
+p.center {
+text-align:center;
+color:#323232;
+margin-bottom:0px;
+padding-bottom:3px;
+}
+
+a {
+color:#323232;
+}
+
+a:hover {
+color:#000000;
+}
+
+#compState {
+height:20px;
+width:100%;
+}
+
+#colWrap {
+display:block;
+width:auto;
+float:right;
+}
+
+#colText {
+height:auto;
+float:left;
+}
+
+.colText {
+padding:0;
+margin:0;
+}
+
+#color {
+width: 82px;
+height: auto;
+margin-left: 10px;
+padding: 0;
+color: #ffffff;
+background-color: #18BA26;
+font-weight: bold;
+text-align: center;
+float:left;
+}
+
+@media print {
+#header {
+border: none;
+}
+
+#wrapper {
+width: 100%;
+}
+
+#QR {
+display:block;
+}
+
+#main {
+margin-top: 0px;
+border: none;
+width: 100%;
+}
+
+#nav{
+display:none;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="header">
+<div id="logo">
+<!--Civil Service logo-->
+<img class="ie_png" src="https://static.civilservicejobs.service.gov.uk/company/csr/2014/css/img/logo.gif" alt="Civil Service" />
+</div>
+</div>
+
+<div id="wrapper" class="cf">
+
+<script>
+document.write("<div id='QR' style='position:relative;'><img src='https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + location.href + "' alt='Quick Reference Image'></div>");
+</script>
+
+<div id="main">
+<!--Pages main header-->
+<h1>Civil Service Jobs<br><span class="subhead">Digital by Default Service Standards Compliance</span></h1>
+
+<div id="intro">
+<h4 class="IntroHead">Introduction / Background / Summary - <a id="min" title="click to maximise" onclick="minimise();return false;" href="#">Click to maximise</a></h4>
+
+<div id="Visible_hidden">
+<h2>Introduction</h2>
+<p>The Government Digital Strategy commits government to ensuring all new or redesigned digital services meet a defined standard from April 2014.
+</p>
+<p>This requires departments to demonstrate they have met the Digital by Default criteria defined below and that they have the capability to be able to maintain this quality for the full life of their services
+</p>
+<h2>Background</h2>
+<p>To establish whether the CS Resourcing eRecruitment services are required to meet the standard the following questions must be considered:
+</p>
+<ul>
+<li>Is the service completely new and/or being redesigned?
+<li>Will the service process (or be likely to process) more than 100,000 transactions every year?
+<li>Is the service the responsibility of a central government department, agency or non-departmental public body?
+<li>Is the service being launched in April 2014 or after?
+</ul>
+<p>If the answer to these questions is Yes then the service must meet the standard before it can go live.  If the answer is No to one or more of these questions then the service does not have to meet the standard.
+</p>
+<p>Whilst the answer to the first 3 questions above is ‘Yes’ the answer to the final bullet is strictly ‘No’ as the new eRecruitment system is due to go live in January 2014. However, it is proposed that in designing the new system CS Resourcing seeks to meet the standard for the following reasons:
+</p>
+<ul>
+<li>In discussions with Cabinet Office earlier in the year it was made clear that there is an expectation that CS Resourcing will meet the standard
+<li>The standard adopts best practice guidelines which CS Resourcing should be following whether they are mandated or not.
+</ul>
+<h2>Summary</h2>
+<p>CS Resourcing believes that in building and implementing the new system it will be fully compliant with all 26 criteria of the Digital by Default Standard as set out in Annex A.</p>
+</div>
+</div>
+
+<h2>The criteria</h2>
+
+<div id="description" class="cf">
+<div id="descriptLeft"><p id="no">1</p></div>
+<div id="descriptRight"><p id="description-text">Understand user needs – conduct research to develop a deep knowledge of who the service users are and what that means for digital and assisted digital service design.</p>
+</div>
+<div id="guidance">
+<h3>Related guides</h3>
+<a href="https://www.gov.uk/service-manual/user-centered-design" target="_blank">Know your users</a>
+<a href="https://www.gov.uk/service-manual/user-centered-design/user-needs.html" target="_blank">User needs</a>
+<a href="https://www.gov.uk/service-manual/assisted-digital" target="_blank">Assisted digital</a>
+</div>
+</div>
+
+<div id="compState">
+</div>
+<div id="colWrap">
+<div id="colText"><p class="colText">Compliance Assessment: </p></div>
+<div id="color"><p class="colText">Green</p></div>
+</div>
+<h2 class="colHead">Compliance Statement</h2>
+<p id="compliance-statement">CS Resourcing believes that it is fully compliant with criteria 1 for the following reasons;<br><br><span>Know your users –</span> CS Resourcing has extensively engaged with customers and stakeholders from right across Government. This included running 10 specialist workshops to gather users requirements, using a wide range of experts including;</p>
+</div>
+
+
+<div id="nav">
+<h2 class="selCritHead">Select Criteria</h2>
+<button class="button_link" onclick="criteria_1()" name="1" type="button" title="Criteria 1" value="1">1</button>
+<button class="button_link" onclick="criteria_2()" name="2" type="button" title="Criteria 2" value="2">2</button>
+<button class="button_link" onclick="criteria_3()" name="3" type="button" title="Criteria 3" value="3">3</button>
+<button class="button_link" onclick="criteria_4()" name="4" type="button" title="Criteria 4" value="4">4</button>
+<button class="button_link" onclick="criteria_5()" name="5" type="button" title="Criteria 5" value="5">5</button>
+<button class="button_link" onclick="criteria_6()" name="6" type="button" title="Criteria 6" value="6">6</button>
+<button class="button_link" onclick="criteria_7()" name="7" type="button" title="Criteria 7" value="7">7</button>
+<button class="button_link" onclick="criteria_8()" name="8" type="button" title="Criteria 8" value="8">8</button>
+<button class="button_link" onclick="criteria_9()" name="9" type="button" title="Criteria 9" value="9">9</button>
+<button class="button_link" onclick="criteria_10()" name="10" type="button" title="Criteria 10" value="10">10</button>
+<button class="button_link" onclick="criteria_11()" name="11" type="button" title="Criteria 11" value="11">11</button>
+<button class="button_link" onclick="criteria_12()" name="12" type="button" title="Criteria 12" value="12">12</button>
+<button class="button_link" onclick="criteria_13()" name="13" type="button" title="Criteria 13" value="13">13</button>
+<button class="button_link" onclick="criteria_14()" name="14" type="button" title="Criteria 14" value="14">14</button>
+<button class="button_link" onclick="criteria_15()" name="15" type="button" title="Criteria 15" value="15">15</button>
+<button class="button_link" onclick="criteria_16()" name="16" type="button" title="Criteria 16" value="16">16</button>
+<button class="button_link" onclick="criteria_17()" name="17" type="button" title="Criteria 17" value="17">17</button>
+<button class="button_link" onclick="criteria_18()" name="18" type="button" title="Criteria 18" value="18">18</button>
+<button class="button_link" onclick="criteria_19()" name="19" type="button" title="Criteria 19" value="19">19</button>
+<button class="button_link" onclick="criteria_20()" name="20" type="button" title="Criteria 20" value="20">20</button>
+<button class="button_link" onclick="criteria_21()" name="21" type="button" title="Criteria 21" value="21">21</button>
+<button class="button_link" onclick="criteria_22()" name="22" type="button" title="Criteria 22" value="22">22</button>
+<button class="button_link" onclick="criteria_23()" name="23" type="button" title="Criteria 23" value="23">23</button>
+<button class="button_link" onclick="criteria_24()" name="24" type="button" title="Criteria 24" value="24">24</button>
+<button class="button_link" onclick="criteria_25()" name="25" type="button" title="Criteria 25" value="25">25</button>
+<button class="button_link" onclick="criteria_26()" name="26" type="button" title="Criteria 26" value="26">26</button>
+</div>
+
+
+</div>
+
+
+<div id="footer">
+<div id="foot_wrap">
+<h2>Further Reading</h2>
+<p><a href="https://www.gov.uk/government/publications/government-digital-strategy" target="_blank">Government Digital Strategy</a></p>
+<p><a href="https://www.gov.uk/service-manual/digital-by-default" target="_blank">Digital by Default Service Standards</a></p>
+<p><a href="https://www.gov.uk/service-manual/digital-by-default/maintaining-the-standard.html" target="_blank">Maintaining the standard</a></p>
+<br><br>
+<p class="center">Built by the CS Resourcing <a href="mailto:sst.csr@csresourcing.gsi.gov.uk">System Support Team</a>&nbsp; - &nbsp;&#169; Crown Copyright</p>
+</div>
+</div>
+
+<script>
+
+function minimise()
+{
+var min = document.getElementById("min").innerHTML;
+if(min === "Click to minimise")
+{
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+}
+else
+{
+document.getElementById("min").innerHTML="Click to minimise";
+document.getElementById("Visible_hidden").style.display="block";
+}
+}
+
+function criteria_1()
+{
+document.getElementById("no").innerHTML="1";
+document.getElementById("description-text").innerHTML="Understand user needs – conduct research to develop a deep knowledge of who the service users are and what that means for digital and assisted digital service design.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related guides</h3><a href="https://www.gov.uk/service-manual/user-centered-design" target="_blank">Know your users</a><a href="https://www.gov.uk/service-manual/user-centered-design/user-needs.html" target="_blank">User needs</a><a href="https://www.gov.uk/service-manual/assisted-digital" target="_blank">Assisted digital</a>';
+}
+
+function criteria_2()
+{
+document.getElementById("no").innerHTML="2";
+document.getElementById("description-text").innerHTML="Assemble a multidisciplinary team that can design, build and operate the service, led by a suitably skilled and senior service manager with full authority and decision-making responsibility.";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("guidance").innerHTML='<h3>Related guides</h3><a href="https://www.gov.uk/service-manual/the-team" target="_blank">The team</a><a href="https://www.gov.uk/service-manual/the-team/service-manager.html" target="_blank">Service manager</a>';
+}
+
+function criteria_3()
+{
+document.getElementById("no").innerHTML="3";
+document.getElementById("description-text").innerHTML="Evaluate what user data and information the service will be providing or storing, and address the security level, legal responsibilities, and risks associated with the service (consulting with experts where appropriate).";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related guides</h3><a href="https://www.gov.uk/service-manual/making-software/cookies.html" target="_blank">Cookies</a><a href="https://www.gov.uk/service-manual/making-software/information-security.html" target="_blank">Information security</a>';
+}
+
+function criteria_4()
+{
+document.getElementById("no").innerHTML="4";
+document.getElementById("description-text").innerHTML="Evaluate the privacy risks to make sure that personal data collection requirements are appropriate.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related guides</h3><a href="https://www.gov.uk/service-manual/making-software/information-security.html" target="_blank">Information Security</a><a href="https://www.gov.uk/service-manual/making-software/logins.html" target="_blank">User accounts and logins</a>';
+}
+
+function criteria_5()
+{
+document.getElementById("no").innerHTML="5";
+document.getElementById("description-text").innerHTML="Evaluate what tools and systems will be used to build, host, operate and measure a service, and how to procure them.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software" target="_blank">Making software</a><a href="https://www.gov.uk/service-manual/operations" target="_blank">Operating a service</a><a href="https://www.gov.uk/service-manual/technology" target="_blank">Technology guides</a>';
+}
+
+function criteria_6()
+{
+document.getElementById("no").innerHTML="6";
+document.getElementById("description-text").innerHTML="Build a working prototype using the agile, iterative and user-centred methods set out in the manual.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/agile" target="_blank">Agile</a><a href="https://www.gov.uk/service-manual/phases/alpha.html" target="_blank">Alpha Phase</a><a href="https://www.gov.uk/service-manual/user-centered-design/working-with-prototypes.html" target="_blank">Working with prototypes</a>';
+}
+
+function criteria_7()
+{
+document.getElementById("no").innerHTML="7";
+document.getElementById("description-text").innerHTML="Establish performance benchmarks, in consultation with GDS, using the 4 key performance indicators (KPIs) defined in the manual, against which the service will be measured.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement" target="_blank">Measurement</a>';
+}
+
+function criteria_8()
+{
+document.getElementById("no").innerHTML="8";
+document.getElementById("description-text").innerHTML="Analyse the prototype service’s success, and translate user feedback into features and tasks for the next phase of development.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/agile/continuous-delivery.html" target="_blank">Continuous delivery</a>';
+}
+
+function criteria_9()
+{
+document.getElementById("no").innerHTML="9";
+document.getElementById("description-text").innerHTML="Create a service that is simple and intuitive enough that users succeed first time, unaided.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement/completion-rate.html" target="_blank">Completion rate</a>';
+}
+
+function criteria_10()
+{
+document.getElementById("no").innerHTML="10";
+document.getElementById("description-text").innerHTML="Put appropriate assisted digital support in place that’s aimed towards those who genuinely need it.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/assisted-digital" target="_blank">Assisted digital</a>';
+}
+
+function criteria_11()
+{
+document.getElementById("no").innerHTML="11";
+document.getElementById("description-text").innerHTML="Plan (with GDS) for the phasing out of any existing alternative channels, where appropriate.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/phases/retirement.html" target="_blank">Retirement phase</a>';
+}
+
+function criteria_12()
+{
+document.getElementById("no").innerHTML="12";
+document.getElementById("description-text").innerHTML="Integrate the service with any non-digital sections required for legal reasons.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/user-centered-design/print-forms.html" target="_blank">Printed forms</a>';
+}
+
+function criteria_13()
+{
+document.getElementById("no").innerHTML="13";
+document.getElementById("description-text").innerHTML="Build a service with the same look, feel and tone as GOV.UK, using the service manual.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/user-centered-design" target="_blank">Design and content</a><a href="https://www.gov.uk/service-manual/user-centered-design/service-look-and-feel" target="_blank">Service look-and-feel</a>';
+}
+
+function criteria_14()
+{
+document.getElementById("no").innerHTML="14";
+document.getElementById("description-text").innerHTML="Make sure that you have the capacity and technical flexibility to update and improve the service on a very frequent basis.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/release-strategies.html" target="_blank">Releasing software</a>';
+}
+
+function criteria_15()
+{
+document.getElementById("no").innerHTML="15";
+document.getElementById("description-text").innerHTML="Make all new source code open and reusable, and publish it under appropriate licences (or provide a convincing explanation as to why this cannot be done for specific subsets of the source code).";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/choosing-technology.html" target="_blank">Choosing technology</a><a href="https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html" target="_blank">Open standards and licensing</a><a href="https://www.gov.uk/service-manual/technology/culture-that-supports-change.html" target="_blank">Culture that supports change</a>';
+}
+
+function criteria_16()
+{
+document.getElementById("no").innerHTML="16";
+document.getElementById("description-text").innerHTML="Use open standards and common government platforms (eg <a class='descript' title='Secure access to public services' href='https://www.gov.uk/service-manual/identity-assurance/'>identity assurance</a>) where available.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html" target="_blank">Open standards and licensing</a>';
+}
+
+function criteria_17()
+{
+document.getElementById("no").innerHTML="17";
+document.getElementById("description-text").innerHTML="Be able to test the end-to-end service in an environment identical to that of the live version (using dummy accounts and a representative sample of potential service users) on all common browsers and devices.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/testing-in-agile.html" target="_blank">Testing in agile</a><a href="https://www.gov.uk/service-manual/operations" target="_blank">Operating a service</a>';
+}
+
+function criteria_18()
+{
+document.getElementById("no").innerHTML="18";
+document.getElementById("description-text").innerHTML="Use analytics tools that collect performance data.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/analytics-tools.html" target="_blank">Analytics Tools</a><a href="https://www.gov.uk/service-manual/measurement/performance-platform.html" target="_blank">Performance Platform</a>';
+}
+
+function criteria_19()
+{
+document.getElementById("no").innerHTML="19";
+document.getElementById("description-text").innerHTML="Build a service that can be iterated on a frequent basis, eg in response to user feedback or performance data and make sure resources are in place to do / pay for the iteration.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/making-software/release-strategies.html" target="_blank">Release strategies</a>';
+}
+
+function criteria_20()
+{
+document.getElementById("no").innerHTML="20";
+document.getElementById("description-text").innerHTML="Put a plan in place for ongoing user testing, including the ability to support multivariate experiments.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/users" target="_blank">Know your users</a><a href="https://www.gov.uk/service-manual/user-centered-design/user-research" target="_blank">User research</a><a href="https://www.gov.uk/service-manual/user-centered-design/user-research/multivariate-testing.html" target="_blank">Multivariate testing</a>';
+}
+
+function criteria_21()
+{
+document.getElementById("no").innerHTML="21";
+document.getElementById("description-text").innerHTML="Achieve ongoing high levels of user satisfaction across the digital and assisted digital service, with performance data reported on the Performance Platform.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement/user-satisfaction.html" target="_blank">User satisfaction</a><a href="https://www.gov.uk/service-manual/measurement/performance-platform.html" target="_blank">Performance Platform</a>';
+}
+
+function criteria_22()
+{
+document.getElementById("no").innerHTML="22";
+document.getElementById("description-text").innerHTML="Achieve ongoing high completion rates across the digital and assisted digital service, with performance data reported on the Performance Platform.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement/completion-rate.html" target="_blank">Completion rate</a><a href="https://www.gov.uk/service-manual/measurement/performance-platform.html" target="_blank">Performance Platform</a>';
+}
+
+function criteria_23()
+{
+document.getElementById("no").innerHTML="23";
+document.getElementById("description-text").innerHTML="Create a plan (with supporting evidence) for achieving a low cost per transaction across the digital and assisted digital service, with performance data reported on the Performance Platform.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement/cost-per-transaction.html" target="_blank">Cost per transaction</a><a href="https://www.gov.uk/service-manual/measurement/performance-platform.html" target="_blank">Performance Platform</a>';
+}
+
+function criteria_24()
+{
+document.getElementById("no").innerHTML="24";
+document.getElementById("description-text").innerHTML="Create a plan (with supporting evidence) for achieving a high digital take-up and assisted digital support for users who really need it, with performance data reported on the Performance Platform.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/measurement/digital-takeup.html" target="_blank">Digital take-up</a><a href="https://www.gov.uk/service-manual/measurement/performance-platform.html" target="_blank">Performance Platform</a>';
+}
+
+function criteria_25()
+{
+document.getElementById("no").innerHTML="25";
+document.getElementById("description-text").innerHTML="Create a contingency ‘rollback’ plan in the event of the service being taken temporarily offline.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><a href="https://www.gov.uk/service-manual/operations/uptime-and-availability.html" target="_blank">Release strategies</a>';
+}
+
+function criteria_26()
+{
+document.getElementById("no").innerHTML="26";
+document.getElementById("description-text").innerHTML="Successfully test the service from beginning to end with the minister responsible for it.";
+document.getElementById("min").innerHTML="Click to maximise";
+document.getElementById("Visible_hidden").style.display="none";
+document.getElementById("guidance").innerHTML='<h3>Related Guidance</h3><p>No related guides yet</p>';
+}
+</script>
+
+</body>
+</html>
