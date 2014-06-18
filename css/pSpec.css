@@ -35,8 +35,9 @@ body {
 	width: 100%;
 }
 
-canvas {
-	margin-left: 60px;
+#canvas {
+	float: right;
+	margin-top: -25px;
 }
 
 /*Biography*/
@@ -45,10 +46,12 @@ canvas {
 	width: 100%;
 }
 
-.threeCol {
+.twoCol {
+	float:left;
+	width: 623px;
 	font-size: 19px;
-       -moz-column-count: 3;
+       -moz-column-count: 2;
        -moz-column-gap: 20px;
-       -webkit-column-count: 3;
+       -webkit-column-count: 2;
        -webkit-column-gap: 20px;
 }

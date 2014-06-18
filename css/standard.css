@@ -107,6 +107,7 @@ a {
 #footWrap {
 	width: 100%;
 	background-color: #aeaeae;
+	clear:both;
 }
 
 #footer {
