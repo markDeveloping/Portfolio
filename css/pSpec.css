@@ -31,8 +31,8 @@ body {
 
 /*My Skills*/
 #skills {
-	clear: both;
 	width: 100%;
+	clear:right;
 }
 
 #canvas {
